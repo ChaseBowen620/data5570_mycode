@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-_s)357vbwduou!1ia!l7ae_y2p!zrt2+4-$jyhhr4*zm6il=ck
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '*']  # Allow all hosts for development
 
 
 # Application definition
@@ -144,12 +144,11 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 20,
 }
 
-# CORS settings for mobile app
+# CORS settings for web app
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # Expo web development
+    "http://localhost:3000",  # Frontend web app
     "http://127.0.0.1:3000",
-    "http://localhost:19006",  # Expo development server
-    "http://127.0.0.1:19006",
+    "http://13.56.226.189:3000",  # EC2 frontend
 ]
 
 # Allow all origins in development (remove in production)
