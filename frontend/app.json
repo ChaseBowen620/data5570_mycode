@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "SideHUSTLE",
+    "slug": "sidehustle",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sidehustle.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.sidehustle.app"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "extra": {
+      "apiUrl": "https://handheld-venue-heading-embedded.trycloudflare.com/api",
+      "eas": {
+        "projectId": "6ab1dd2c-1374-40ad-afc3-0d53cdd30d01"
+      }
+    },
+    "owner": "chasecbowen"
+  }
+}
